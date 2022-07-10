@@ -1,0 +1,455 @@
+html {
+    /* font-size: calc( 14px + 11 * ((100vw - 320px) / 880)); */
+    color: #f3f3f3;
+
+}
+
+body {
+    font-family: "Roboto", Sans-serif;
+    background-color: white;
+    text-align: center;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    /* margin: 1rem 0; */
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    /* margin: 0.5rem 0; */
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* margin: 0.5rem 0; */
+}
+
+h5 {
+    font-size: 1.2rem;
+    /* margin: 0.5rem 0; */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.main {
+    position: relative;
+    top: 3.5rem; /*to compensate fixed header */
+    background-color: #f3f3f3;
+    
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -10rem; /*to compensate fixed header */
+    visibility: hidden;
+}
+
+/* Header section */
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #545454;
+    color: #f3f3f3;
+    width: 100%;
+
+    z-index: 10;
+}
+
+.header .content {
+    display: flex;
+    padding: 0.25rem 1rem;
+    height: 3.5rem;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: #d3ba9c solid 2px;
+}
+
+
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+.logo-title {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.header ul {
+    display: flex;
+    padding-right: 1.5rem;
+}
+
+.header li a {
+    padding-left: 2.5rem;
+    color: #f3f3f3;
+}
+
+/* Banner section */
+#banner {
+    background-image: url("../images/chessboard.jpg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .banner-container {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 12.5rem;
+    background-color: #545454;
+    opacity: 0.9;
+    overflow: hidden;   
+    border: solid 1px lightgray;
+}
+
+#banner .banner-container img {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    top: 5%;
+    left: 1%;
+    opacity: 0.9;
+}
+
+/* Introduction section */
+#introduction, #contact-location {  
+    background-color: #545454;
+    height: auto;
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: center;
+    border-top: #d3ba9c solid 2px;
+    border-bottom: #d3ba9c solid 2px;
+}
+
+#introduction .content {
+    width: 30%;
+}
+
+#introduction p {
+    float: left;
+    text-align: left;
+}
+
+#introduction ul {
+    display: block;
+    text-decoration: underline;
+    list-style:unset;
+    clear: left;
+    padding-left: 2rem;
+    
+}
+
+#introduction li {
+    text-align: left;
+    line-height: 1.2rem;
+}
+
+
+.first-character {
+    float: left;
+    font-size: 4rem;
+    line-height: 3rem;
+    padding-top: 0.3rem;
+    padding-right: 0.3rem;
+    padding-left: 0.12rem;
+}
+
+/* Introduction image slider */
+.slider {
+    width: 400px;
+    height: 265px;
+    margin-left: 5%;
+    margin-right: 0;
+    background-color: #545454;
+    text-align: center;
+    overflow: hidden;
+}
+.image-container {
+width: 1600px;
+height: 265px;
+clear: both;
+position: relative;
+-webkit-transition: left 1s;
+-moz-transition: left 1s;
+-o-transition: left 1s;
+transition: left 1s;
+}
+.slide {
+float: left;
+margin: 0px;
+padding: 0px;
+position: relative;
+}
+#slide-1:target ~ .image-container {
+left: 0px;
+}
+#slide-2:target ~ .image-container {
+left: -400px;
+}
+#slide-3:target ~ .image-container {
+left: -800px;
+}
+#slide-4:target ~ .image-container {
+left: -1200px;
+}
+.buttons {
+position: relative;
+top: -20px;
+}
+.buttons a {
+display: inline-block;
+height: 15px;
+width: 15px;
+border-radius: 50px;
+background-color: lightgrey;
+}
+#introduction a:hover {
+    background-color: #545454;
+    color:white;
+    }
+
+/* Join us section */
+#join-us {
+    background-image: url("../images/chessboard.jpg");
+    background-repeat: no-repeat;
+    background-color: #545454;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-us-container {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 15rem;
+    background-color: #545454;
+    opacity: 0.9;
+    overflow: hidden;   
+    border: solid 1px lightgray;
+}
+
+#join-us h2 {
+    margin: 4rem 0 2rem 0;
+}
+
+#join-us p {
+    margin: 1rem 1rem;
+}
+
+#join-us table {
+    width: 100%;
+}
+
+#join-us select {
+    font-family: "Roboto", Sans-serif;
+    font-size: 1rem;
+}
+
+.join-us-button {
+    margin: 1rem 0;
+    background: linear-gradient(to bottom right, #545454, #d3ba9c);
+    border: 0;
+    border-radius: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .5s ease-in-out;
+}
+
+.join-us-button:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #d3ba9c, .125rem .125rem 1rem #d3ba9c;
+}
+
+/* Contact-location section */
+.contact-details {
+    margin: 0 2rem;
+    text-align: left;
+}
+
+.location {
+    margin-left: 5%;
+}
+
+/* copyright */
+.copyright {
+    display: block;
+    padding: 0.5rem;
+    color: lightgray;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(54,54,54,0.5),rgba(54,54,54,0.5)),url("../images/chessboard.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.copyright p {
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-device-width: 1145px) {
+    #introduction, #contact-location {  
+        padding: 2rem 5%;
+
+    }
+}
+
+@media only screen and (max-device-width: 1026px) {
+    #banner, #join-us, .copyright {
+      background-attachment: scroll;
+    }
+    
+    #introduction .content {
+        width: 40%;
+    }
+
+    .contact-details {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-device-width: 885px) {
+    #contact-location {
+        display: block;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    #contact-location h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-details {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .location {
+        margin: 1rem 0 0;
+    }
+
+    .location iframe {
+        width: 100%;
+    }
+
+    .copyright {
+        background: #545454;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .logo-title {
+      display: none;
+    }
+
+    .main {
+        top: 3rem;
+    }
+
+    .header .content {
+        height: 3rem;
+        justify-content: space-between;
+    }
+
+    .header ul {
+        padding-right: 0;
+        justify-content: space-between;
+    }
+
+    #banner {
+        height: 65vw;
+    }
+
+    #banner .banner-container {
+        height: 50vw;
+        width: 50vw;
+        border-radius: 25vw;
+    }
+
+    #introduction {
+        display: block;
+    }
+
+    #introduction .content {
+        width: 100%;
+    }
+
+    .slider {
+        margin: 1rem auto 0;
+    }
+
+    #join-us {
+        height: 70vw;
+    }
+
+    #join-us h2 {
+        margin: 1rem 0;
+        font-size: 1.75rem;
+    }
+
+    .join-us-container {
+        width: 80%;
+        height: auto;
+        border-radius: 10vw;
+        overflow: hidden;   
+        border: solid 1px lightgray;
+    }
+}
+
+@media only screen and (max-device-width: 492px) {
+    .header nav {
+        width: 100%;
+    }
+
+    .header li a {
+        padding-left: 0;
+    }
+
+    .logo {
+        margin-right: 20%;
+    }
+}
+
+
+
+
+
